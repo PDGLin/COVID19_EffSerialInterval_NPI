@@ -1,4 +1,10 @@
-# MCMC function
+#######################################################################
+## Function of Markov chain Monte Carlo (MCMC)                       ##
+## Ver 1.0 (2017/05) by Prof. Joseph T. Wu, Mr. CK Lam, Dr. Lin Wang ##
+## Ver 2.0 (2020/05) by Dr. Lin Wang                                 ##
+## Email: lw660@cam.ac.uk                                            ##
+## Web: http://pdg.gen.cam.ac.uk/                                    ##
+#######################################################################
 
 MCMC <- function(data_to_fit, numStepsPerParameter, likelihood_options)
 {
@@ -9,12 +15,12 @@ MCMC <- function(data_to_fit, numStepsPerParameter, likelihood_options)
   minProbAccept = MCMC_pars_ls$minProbAccept;
   maxProbAccept = MCMC_pars_ls$maxProbAccept;
 
-	minIterBeforeRestart = 1000 * length(LB);
+  minIterBeforeRestart = 1000 * length(LB);
 	
-	numStepsBetweenDisplay = 500;
-	storageSize = min(numStepsPerParameter, 1000);
-	probAccept = (minProbAccept + maxProbAccept) / 2;
-	oldProbAccept = array(-1, c(1, length(LB)));
+  numStepsBetweenDisplay = 500;
+  storageSize = min(numStepsPerParameter, 1000);
+  probAccept = (minProbAccept + maxProbAccept) / 2;
+  oldProbAccept = array(-1, c(1, length(LB)));
 
 	stepSTD = rep(0.1, length(LB)); # kronecker(matrix(1,1,length(LB)),0.1);
 	delta = 30;
