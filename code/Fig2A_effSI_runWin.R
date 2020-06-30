@@ -1,3 +1,10 @@
+#########################################
+## Fig.2A 14-day running windows, v1   ##
+## Wrote by Dr. Lin Wang, 2020/06/30   ##
+## Email: lw660@cam.ac.uk              ##
+## Web: https://www.pdg.gen.cam.ac.uk/ ##
+#########################################
+
 
 rm(list=ls())
 
