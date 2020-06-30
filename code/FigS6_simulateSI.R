@@ -1,4 +1,10 @@
-# Simulation of serial intervals with isolation delay from 10 to 0 days
+#####################################################################################################
+## Fig.S6, Simulation of serial intervals with isolation delay from 10 to 0 days                 ####
+## Wrote by Dr. Eric H.Y. Lau                                                                    ####
+## Email: ehylau@hku.hk                                                                          ####          
+## Web: https://sph.hku.hk/en/about-us/faculty-and-staff/academic-related-staff/lau,-ho-yin-eric ####
+#####################################################################################################
+
 rm(list=ls())
 
 # Incubation period with mean 5.2 and SD 3.9 days (lognormal) (Li et al., NEJM 2020)
