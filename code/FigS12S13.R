@@ -1,7 +1,14 @@
+#######################################################
+## Figs. S12 & S13                                   ##
+## Sensitivity analysis: Uncertainty in recall bias  ##
+## Wrote by Dr. Lin Wang, 2020/07/11                 ##
+## Email: lw660@cam.ac.uk                            ##
+## Web: https://www.pdg.gen.cam.ac.uk/               ##
+#######################################################
 
 rm(list=ls())
 
-setwd("C:/Users/Lin/Dropbox/COVIE19/Collaborations/Shared HKU_IP_Camb/serial_interval_covid19/Manuscript/Science/Submission Science Report/Revision V1/Data Code to Upload") # Must Do: Specify the working directory !!
+setwd("") # Must Do: Specify the working directory !!
 getwd()
 
 source("myFun_readTransPairs.R");
@@ -421,162 +428,4 @@ ggsave2(
   plot=ps1, 
   width=10, height=12, units="cm", device="eps", dpi=300
 )
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## MCMC settings: Age & Sex -------------------------------------------
-
-# Plot_MCMC_Age_Sex_fit <- function( likelihood_options, df_plot, onset_LB_UB_Mat, tar_linelist ) {
-#   n_stratification = length(df_plot$is_byAge);
-#   win_LBvec = onset_LB_UB_Mat[, 1];
-#   win_UBvec = onset_LB_UB_Mat[, 2];
-#   nwin = length(win_UBvec);
-#   phaseTag_vec = rev( seq(1, nwin) )
-#   
-#   ## MCMC Settings 
-#   numStepsPerParameter = 100000;  # To Do: Choose Chain Length
-#   
-#   MCMC_pars_ls <- SetPars_MCMC( numStepsPerParameter )
-#   startingPoint = MCMC_pars_ls$startingPoint
-#   LB = MCMC_pars_ls$LB
-#   UB = MCMC_pars_ls$UB
-#   minProbAccept = MCMC_pars_ls$minProbAccept
-#   maxProbAccept = MCMC_pars_ls$maxProbAccept
-#   df_pars_estim_full = MCMC_pars_ls$df_pars_estim_full
-#   df_pars_estim = MCMC_pars_ls$df_pars_estim
-#   
-#   age_primaryCase_vec = as.numeric( tar_linelist$s_age );
-#   age_median = median( age_primaryCase_vec[ !is.na(age_primaryCase_vec) ] );
-#   age_primaryCase_vec[ is.na(age_primaryCase_vec) ] <- 10000
-#   
-#   for (idx_window in 1:nwin) {
-#     LB_win = win_LBvec[idx_window]; 
-#     UB_win = win_UBvec[idx_window];
-#     
-#     for (idx_stra in 1:n_stratification) {
-#       df_pars_estim$phase <- phaseTag_vec[idx_window]
-#       df_pars_estim$onsetDay_LB <- LB_win;
-#       df_pars_estim$onsetDay_UB <- UB_win;
-#       print(c(LB_win, UB_win))
-#       
-#       is_byAge = df_plot$is_byAge[idx_stra]; 
-#       is_bySex = df_plot$is_bySex[idx_stra];
-#       is_young = df_plot$is_young[idx_stra];
-#       is_male  = df_plot$is_male[idx_stra];
-#       
-#       tar_linelist_p1 <- tar_linelist %>% filter(
-#         tar_linelist[["s_Date of onset"]] >= LB_win & 
-#         tar_linelist[["s_Date of onset"]] <= UB_win
-#         )
-#       
-#       if (is_byAge) { # stratification by age
-#         age_primaryCase_vec_p1 = as.numeric( tar_linelist_p1$s_age );
-#         age_primaryCase_vec_p1[ is.na(age_primaryCase_vec_p1) ] <- 10000
-#         if (is_young) {
-#           tar_linelist_p2 <- tar_linelist_p1 %>% filter( age_primaryCase_vec_p1 < age_median );
-#         } else {
-#           tar_linelist_p2 <- tar_linelist_p1 %>% filter( age_primaryCase_vec_p1 >= age_median & age_primaryCase_vec_p1 < 1000 );
-#         }
-#         
-#       } else if (is_bySex) { # stratification by gender
-#         if (is_male) {
-#           tar_linelist_p2 <- tar_linelist_p1 %>% filter(
-#             !( str_detect(tar_linelist_p1$s_gender, "female") | str_detect(tar_linelist_p1$s_gender, "unknown") )
-#           );
-#         } else {
-#           tar_linelist_p2 <- tar_linelist_p1 %>% filter( str_detect(tar_linelist_p1$s_gender, "female") );
-#         }
-#       }
-#       
-#       serialIntervalData <- tar_linelist_p2[["p_Date of onset"]] - tar_linelist_p2[["s_Date of onset"]];
-#       df_pars_estim$sample_size <- length(serialIntervalData);
-#       
-#       data = serialIntervalData;
-#       result = MCMC(data, LB, UB, startingPoint, numStepsPerParameter, minProbAccept, maxProbAccept, likelihood_options);
-#       
-#       chainRecord = result$chainRecord;
-#       # probAccept = result$probAccept;
-#       df_pars_estim <- MCMC_posterior_analyser(chainRecord, numStepsPerParameter, likelihood_options, df_pars_estim, data)
-#       
-#       df_pars_estim_full = bind_rows( df_pars_estim_full, df_pars_estim );
-#     }
-#   }
-#   
-#   df_pars_estim_full$stratification <- rep(seq(n_stratification, 1), nwin)
-#   
-#   return(df_pars_estim_full)
-# }
-# 
-# ## run TableS2: Age & Sex
-# df_plot = tibble(
-#   is_byAge = c(T, T, F, F),
-#   is_bySex = c(F, F, T, T),
-#   is_young = c(T, F, F, F),
-#   is_male  = c(F, F, T, F)
-#   )
-# 
-# onset_LB_vec = c(9, 23, 30, 9)
-# onset_UB_vec = c(22, 29, 44, 44)
-# onset_LB_UB_Mat = cbind(onset_LB_vec, onset_UB_vec)
-# 
-# df_pars_estim_full <- Plot_MCMC_Age_Sex_fit( likelihood_options, df_plot, onset_LB_UB_Mat, tar_linelist )
-# 
-# if (likelihood_options$is_Normal) {
-#   file_nm_write = "NormalFit";
-# } else if (likelihood_options$is_Gumbel) {
-#   file_nm_write = "GumbelFit";
-# } else if (likelihood_options$is_Logistic) {
-#   file_nm_write = "LogisFit";
-# }
-# file_nm_write = paste0("TableS2_", file_nm_write, "_forwardSI_age_sex_nonOverlap")
-# 
-# save(
-#   df_pars_estim_full,
-#   file = paste(getwd(), paste0(file_nm_write, ".Rdata"), sep = .Platform$file.sep)
-# )
-# write_csv(
-#   df_pars_estim_full,
-#   paste(getwd(), paste0(file_nm_write, ".csv"), sep = .Platform$file.sep )
-# )
-# 
-# 
-# 
 
