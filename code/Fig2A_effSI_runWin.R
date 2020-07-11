@@ -70,7 +70,7 @@ likelihood_options = myFun_choose_likelihood( tar_likelihood_model );
 folder_nm = "InputData";
 file_name = paste(getwd(), folder_nm, "TableS1_1407TransPairs.csv", sep = .Platform$file.sep);
 
-Covid19.China <- Read_TransPairs( file_name )  # To Do: Check if first index case of each cluster needs to be excluded
+Covid19.China <- Read_TransPairs( file_name );
 
 
 ####  MCMC fittings: by Isolation  ####
