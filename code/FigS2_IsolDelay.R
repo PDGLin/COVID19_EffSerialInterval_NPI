@@ -1,7 +1,13 @@
+###########################################################################################
+## Fig.S2, Temporal change of the time delay in isolating infector (isolation delay D_i) 
+## Wrote by Dr. Lin Wang, 2020/07/11                                                     
+## Email: lw660@cam.ac.uk                                                                
+## Web: https://www.pdg.gen.cam.ac.uk/                                                   
+###########################################################################################
 
 rm(list=ls())
 
-setwd("C:/Users/Lin/Dropbox/COVIE19/Collaborations/Shared HKU_IP_Camb/serial_interval_covid19/Manuscript/Science/Submission Science Report/Revision V1/Data Code to Upload")
+setwd(" ") # Must Do: Specify the working directory !!
 getwd()
 
 source("myFun_readTransPairs.R");
@@ -35,7 +41,6 @@ uninstalled_dependencies <- dependencies[!dependencies %in% installed_package_na
 lapply(uninstalled_dependencies, install.packages)
 
 ## load packages ----
-
 library(readr)
 library(dplyr)
 library(stringr)
@@ -55,11 +60,9 @@ myDarkBlue = "#2b83ba";
 ####  To Do: Choose likelihood func  ####
 # To Do: Choose Likelihood Model: "Normal_fit", "Gumbel_fit", "Logist_fit", "LogNormal_fit", or "transPair_fit"
 tar_likelihood_model = "Normal_fit"; 
-
 likelihood_options = myFun_choose_likelihood( tar_likelihood_model );
 
 ####  read "linelist" and "transmission pair" data  ####
-
 folder_nm = "InputData";
 file_name = paste(getwd(), folder_nm, "TableS1_1407TransPairs.csv", sep = .Platform$file.sep);
 
@@ -428,70 +431,5 @@ ggsave(
   plot=ps2, 
   width=20, height=8, units="cm", device="eps", dpi=300
   )
-
-
-# scale_x_continuous(
-#   breaks= unique(df_pars_estim_runWin$onsetDay_LB),
-#   labels=c(
-#     "7" = "Jan 7 - Jan 16",
-#     "8" = "Jan 8 - Jan 17",
-#     "9" = "Jan 9 - Jan 18",
-#     "10" = "Jan 10 - Jan 19",
-#     "11" = "Jan 11 - Jan 20",
-#     "12" = "Jan 12 - Jan 21",
-#     "13" = "Jan 13 - Jan 22",
-#     "14" = "Jan 14 - Jan 23",
-#     "15" = "Jan 15 - Jan 24",
-#     "16" = "Jan 16 - Jan 25",
-#     "17" = "Jan 17 - Jan 26",
-#     "18" = "Jan 18 - Jan 27",
-#     "19" = "Jan 19 - Jan 28",
-#     "20" = "Jan 20 - Jan 29",
-#     "21" = "Jan 21 - Jan 30",
-#     "22" = "Jan 22 - Jan 31",
-#     "23" = "Jan 23 - Feb 01",
-#     "24" = "Jan 24 - Feb 02",
-#     "25" = "Jan 25 - Feb 03",
-#     "26" = "Jan 26 - Feb 04",
-#     "27" = "Jan 27 - Feb 05"
-#   )
-# ) +
-# scale_x_continuous(
-#   breaks= unique(df_pars_estim_runWin$onsetDay_LB),
-#   labels=c(
-#     "7" = "Jan 7 - Jan 16",
-#     "8" = "Jan 8 - Jan 17",
-#     "9" = "Jan 9 - Jan 18",
-#     "10" = "Jan 10 - Jan 19",
-#     "11" = "Jan 11 - Jan 20",
-#     "12" = "Jan 12 - Jan 21",
-#     "13" = "Jan 13 - Jan 22",
-#     "14" = "Jan 14 - Jan 23",
-#     "15" = "Jan 15 - Jan 24",
-#     "16" = "Jan 16 - Jan 25",
-#     "17" = "Jan 17 - Jan 26",
-#     "18" = "Jan 18 - Jan 27",
-#     "19" = "Jan 19 - Jan 28",
-#     "20" = "Jan 20 - Jan 29",
-#     "21" = "Jan 21 - Jan 30",
-#     "22" = "Jan 22 - Jan 31",
-#     "23" = "Jan 23 - Feb 01",
-#     "24" = "Jan 24 - Feb 02",
-#     "25" = "Jan 25 - Feb 03",
-#     "26" = "Jan 26 - Feb 04",
-#     "27" = "Jan 27 - Feb 05",
-#     "28" = "Jan 28 - Feb 06",
-#     "29" = "Jan 29 - Feb 07",
-#     "30" = "Jan 30 - Feb 08",
-#     "31" = "Jan 31 - Feb 09",
-#     "32" = "Jan 31 - Feb 10",
-#     "33" = "Jan 31 - Feb 11",
-#     "34" = "Jan 31 - Feb 12",
-#     "35" = "Jan 31 - Feb 13"
-#     )
-#   ) +
-
-
-
 
 
