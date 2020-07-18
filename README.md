@@ -1,3 +1,3 @@
-# COVID19_EffSerialInterval_NPI
+# Serial interval of SARS-CoV-2 was shortened over time by non-pharmaceutical interventions
 
 more code is coming
