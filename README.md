@@ -6,10 +6,17 @@ more code is coming
 
 ## Authors
 
-Name | Email
+Name | Email | Twitter | Github
 ------------ | -------------
-Content from cell 1 | Content from cell 2
-Content in the first column | Content in the second column
+Sheikh Taslim Ali | alist15@hku.hk | @alisheikhtaslim | @alisheikhtaslim 
+Lin Wang | lw660@cam.ac.uk | @fdlwang | @PDGLin
+Eric HY Lau | ehylau@hku.hk |   |  
+Xiao-Ke Xu | xuxiaoke@foxmail.com |   |
+Zhanwei Du | duzhanwei0@gmail.com |   | @ZhanweiDU 
+Ye Wu | wuye@bnu.edu.cn |   |   
+Gabriel M. Leung | deanmed@hku.hk | @gmleunghku |   
+Benjamin J. Cowling | bcowling@hku.hk | @bencowling88  |   
+
 
 ## Citation
 
