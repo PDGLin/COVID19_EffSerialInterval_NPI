@@ -7,7 +7,7 @@ more code is coming
 ## Authors
 
 Name | Email | Twitter | Github
------------- | -------------
+------------ | ------------- | ------------- | -------------
 Sheikh Taslim Ali | alist15@hku.hk | @alisheikhtaslim | @alisheikhtaslim 
 Lin Wang | lw660@cam.ac.uk | @fdlwang | @PDGLin
 Eric HY Lau | ehylau@hku.hk |   |  
