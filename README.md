@@ -20,8 +20,6 @@ Benjamin J. Cowling | bcowling@hku.hk | @bencowling88  |
 
 ## Citation
 
-::: warning
-*here be dragons*
-:::
+
 
 Serial interval of SARS-CoV-2 was shortened over time by non-pharmaceutical interventions, Science, in press
