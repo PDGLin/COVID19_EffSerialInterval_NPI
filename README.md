@@ -20,6 +20,14 @@ Benjamin J. Cowling | bcowling@hku.hk | @bencowling88  |
 
 ## Citation
 
+```{bibtex}
+@misc{Ali2020SerialInterval,
+  author =       {S.T. Ali, L. Wang, E.H.Y. Lau, X.-K. Xu, Z. Du, Y. Wu, G.M. Leung, B.J. Cowling },
+  title =        {{Serial interval of SARS-CoV-2 was shortened over time by non-pharmaceutical interventions}},
+  howpublished = {Accessed on yyyy-mm-dd from
+                  \url{http://virological.org/t/epidemiological-data-from-the-ncov-2019-outbreak-early-descriptions-from-publicly-available-data/337}},
+  year =         2020
+  journal =      Science
+}
+```
 
-
-Serial interval of SARS-CoV-2 was shortened over time by non-pharmaceutical interventions, Science, in press
