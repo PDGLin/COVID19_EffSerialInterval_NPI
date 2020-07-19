@@ -25,7 +25,7 @@ Benjamin J. Cowling | bcowling@hku.hk | @bencowling88  |
 ```{bibtex}
 @misc{Ali2020SerialInterval,
   author =       {S.T. Ali, L. Wang, E.H.Y. Lau, X.-K. Xu, Z. Du, Y. Wu, G.M. Leung, B.J. Cowling },
-  title =        {{Serial interval of SARS-CoV-2 was shortened over time by non-pharmaceutical interventions}},
+  title =        {Serial interval of SARS-CoV-2 was shortened over time by non-pharmaceutical interventions},
   howpublished = {Accessed on yyyy-mm-dd from \url{XXX}},
   year =         2020
   journal =      Science
