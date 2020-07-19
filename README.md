@@ -10,7 +10,7 @@ Name | Email | Twitter | Github
 ------------ | ------------- | ------------- | -------------
 Sheikh Taslim Ali | alist15@hku.hk | @alisheikhtaslim | @alisheikhtaslim 
 Lin Wang | lw660@cam.ac.uk | @fdlwang | @PDGLin
-Eric HY Lau | ehylau@hku.hk | @ehylau |  
+Eric HY Lau | ehylau@hku.hk |  |  @ehylau
 Xiao-Ke Xu | xuxiaoke@foxmail.com |   |
 Zhanwei Du | duzhanwei0@gmail.com | @du8491 | @ZhanweiDU 
 Ye Wu | wuye@bnu.edu.cn |   |   
