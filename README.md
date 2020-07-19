@@ -1,5 +1,7 @@
 # Serial interval of SARS-CoV-2 was shortened over time by non-pharmaceutical interventions
 
+## Description
+
 Data and code
 
 more code is coming
