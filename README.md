@@ -10,8 +10,9 @@ Published at Science: https://science.sciencemag.org/content/early/2020/07/20/sc
 
 [Transmission Pairs data](/raw_data/TableS1_1407TransPairs.csv)
 
-[Timeline of each NPI in mainland China](/raw_data/NPI_data_FigS7.csv)
+[Timeline data of each NPI in mainland China](/raw_data/NPI_data_FigS7.csv)
 
+Code description is preparing
 
 
 ## Authors
