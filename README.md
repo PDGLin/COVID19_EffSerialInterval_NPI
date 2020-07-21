@@ -17,12 +17,12 @@ Code description is preparing
 
 ## Authors
 
-Name | Email | Twitter | Github
+Name | Email | Twitter / WeChat | Github
 ------------ | ------------- | ------------- | -------------
 Sheikh Taslim Ali | alist15@hku.hk | @alisheikhtaslim | @alisheikhtaslim 
 Lin Wang | lw660@cam.ac.uk | @fdlwang | @PDGLin
 Eric HY Lau | ehylau@hku.hk | @erichylau  |  @ehylau
-Xiao-Ke Xu | xuxiaoke@foxmail.com |   |
+Xiao-Ke Xu | xuxiaoke@foxmail.com | xiaokeeie  |
 Zhanwei Du | duzhanwei0@gmail.com | @du8491 | @ZhanweiDU 
 Ye Wu | wuye@bnu.edu.cn |   |   
 Gabriel M. Leung | deanmed@hku.hk | @gmleunghku |   
