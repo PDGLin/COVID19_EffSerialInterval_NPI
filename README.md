@@ -6,9 +6,13 @@ Studies of novel coronavirus disease (COVID-19) have reported varying estimates 
 
 Published at Science: https://science.sciencemag.org/content/early/2020/07/20/science.abc9004   
 
-## Data and code
+## Data and code description
 
-more code is coming
+[Transmission Pairs data](/raw_data/TableS1_1407TransPairs.csv)
+
+[Timeline of each NPI in mainland China](/raw_data/NPI_data_FigS7.csv)
+
+
 
 ## Authors
 
