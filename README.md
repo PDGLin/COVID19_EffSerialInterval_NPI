@@ -6,7 +6,6 @@ Studies of novel coronavirus disease (COVID-19) have reported varying estimates 
 
 Published at Science: https://science.sciencemag.org/content/early/2020/07/20/science.abc9004   
 
-
 ## Data and code
 
 more code is coming
