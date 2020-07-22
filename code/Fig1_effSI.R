@@ -1,9 +1,10 @@
 #########################################
-## Fig.1 non-overlapping periods, v1   ##
-## Wrote by Dr. Lin Wang, 2020/06/30   ##
-## Email: lw660@cam.ac.uk              ##
-## Web: https://www.pdg.gen.cam.ac.uk/ ##
-#########################################
+## Fig.1 non-overlapping periods
+## Ver 1 (2020/06/30)
+## by Dr. Lin Wang & Dr. Sheikh Taslim Ali    
+## Contact: lw660@cam.ac.uk              
+## Website: https://www.pdg.gen.cam.ac.uk/ 
+###############################################
 
 rm(list=ls())
 
