@@ -12,7 +12,7 @@ Published at Science: https://science.sciencemag.org/content/early/2020/07/20/sc
 
 [Timeline data of each NPI in mainland China](/raw_data/NPI_data_FigS7.csv)
 
-Code description is updating
+Most codes are ready in this [folder](/code). A few more will be uploaded soon.
 
 
 ## Authors
