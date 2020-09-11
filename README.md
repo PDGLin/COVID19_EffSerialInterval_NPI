@@ -15,7 +15,13 @@ Published at Science: https://science.sciencemag.org/content/early/2020/07/20/sc
 Most codes are ready in this [folder](/code). A few more will be uploaded soon.
 
 
+## Mechanisms underlying the observed patterns (Figure S1 in the published paper)
+
 ![alt_text](code/graphics/FigS1_mechanisms.png)
+
+From the view of a single transmission pair, serial interval depends on the infectiousness profile of the infector and the incubation period of the infectee. On the other hand, from the view of each infector, the realized serial intervals may not only depend on the properties of each transmission pair (i.e., infectiousness profile, incubation period) but may also depend on the properties of contacts (e.g., contact patterns, structure of contacts). Fig. S1(A) illustrates the effect of these basic factors on shaping serial interval distribution. 
+The influence of non-pharmaceutical intervals (NPIs) on re-shaping serial interval distribution can be understood from two aspects (Fig. S1 (B)-(C)). On one hand, the implementation of NPIs via enhanced contact tracing and scaling up testing capacities reduced the time delay in isolating cases (Fig. S2 in the published paper), which reduces the period of infectiousness and hence truncates the exposure window for susceptible individuals to acquire infection. On the other hand, the NPI-induced truncation on the period of infectiousness may also reduce or even avoid the generation of some secondary cases, skewing the serial interval distribution to the left.
+
 
 
 ## Authors
